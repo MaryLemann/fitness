@@ -1,0 +1,34 @@
+{
+  "name": "fitness",
+  "version": "1.0.0",
+  "description": "Вёрстка адаптивного сайта для фитнес-центра (pug, scss, gulp)",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-pngquant": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matvey-phoen1x/fitness.git"
+  },
+  "author": "Matvey Phoenix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matvey-phoen1x/fitness/issues"
+  },
+  "homepage": "https://github.com/matvey-phoen1x/fitness"
+}

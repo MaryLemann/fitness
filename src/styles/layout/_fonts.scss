@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Gora';
+  src: url('./../fonts/gora-free.woff2') format('woff2'),
+      url('./../fonts/gora-free.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: optional;
+}
+
+@mixin gora() {
+  font-family: 'Gora', Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./../fonts/opensans-regular.woff2') format('woff2'),
+      url('./../fonts/opensans-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./../fonts/opensans-bold.woff2') format('woff2'),
+      url('./../fonts/opensans-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./../fonts/opensans-extrabold.woff2') format('woff2'),
+      url('./../fonts/opensans-extrabold.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./../fonts/opensans-light.woff2') format('woff2'),
+      url('./../fonts/opensans-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./../fonts/opensans-lightitalic.woff2') format('woff2'),
+      url('./../fonts/opensans-lightitalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: optional;
+}
+
+@mixin opensans($style) {
+  font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+
+	@if $style == bold {
+    font-weight: bold;
+    font-style: normal;
+  }
+  @if $style == light {
+    font-weight: 300;
+      font-style: normal;
+  }
+  @if $style == light-italic {
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  @if $style == regular {
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @if $style == extrabold {
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./../fonts/roboto-bold.woff2') format('woff2'),
+      url('./../fonts/roboto-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./../fonts/roboto-light.woff2') format('woff2'),
+      url('./../fonts/roboto-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: optional;
+}
+
+@mixin roboto($style) {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
+	@if $style == bold {
+    font-weight: bold;
+    font-style: normal;
+  }
+  @if $style == light {
+    font-weight: 300;
+      font-style: normal;
+  }
+}

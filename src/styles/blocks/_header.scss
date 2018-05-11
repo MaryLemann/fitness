@@ -1,0 +1,100 @@
+.header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #131415;
+  padding: rem(20px);
+
+  &__logo, &__nav, &__info {
+    width: calc(100% / 3);
+  }
+
+  &__logo, &__info {
+    @include tablet() {
+      width: calc(100% / 2);
+      order: 1;
+    }
+  }
+
+  &__nav {
+    @include tablet() {
+      width: 100%;
+      order: 5;
+    }
+  }
+
+  &__info {
+    text-align: right;
+  }
+
+  &__info-phone {
+    display: block;
+    text-decoration: none;
+    margin-bottom: rem(8px);
+
+    & span {
+      font-size: rem(21px);
+      color: #ffffff;
+      @include opensans(bold);
+    }
+  }
+
+  &__info-time {
+    display: block;
+
+    & span {
+      @include opensans(bold);
+      font-size: rem(14px);
+      color: rgba(248, 149, 19, 0.7);
+      text-decoration: underline;
+      cursor: pointer;
+      
+      &:hover {
+        color: rgba(white, 0.7);
+      }
+    }
+  }
+}
+
+.container--header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.logo {
+  @include gora();
+  font-size: rem(18px);
+  line-height: 3;
+  letter-spacing: 1.8px;
+  color: #f89513;
+  text-decoration: none;
+}
+
+.container--banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  padding: rem(30px);
+
+  &__img {
+    width: 80%;
+    height: 80%;
+
+    @include tablet() {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

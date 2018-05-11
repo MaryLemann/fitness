@@ -1,0 +1,49 @@
+//variables
+$desktops: 1200px;
+$laptops: 992px;
+$tablets: 768px;
+$phones: 480px;
+
+//function
+@function rem($pixels) {
+  @return #{$pixels / 16px}rem;
+}
+
+//mixins
+@mixin laptop {
+  @media screen and (max-width: $laptops){
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: $tablets){
+    @content;
+  }
+}
+@mixin phone {
+  @media screen and (max-width: $phones){
+    @content;
+  }
+}
+
+//base
+@import "./layout/_normalize.scss";
+@import "./layout/_base.scss";
+
+//fonts
+@import "./layout/_fonts.scss";
+
+
+//all
+@import "./layout/_general.scss";
+
+// Blocks
+@import './blocks/_header.scss';
+@import './blocks/_nav.scss';
+@import './blocks/_footer.scss';
+
+// Pages
+@import './pages/_intro-page.scss';
+@import './pages/_main-page.scss';
+@import './pages/_comments-page.scss';
+@import './pages/_price-page.scss';

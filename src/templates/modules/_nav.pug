@@ -1,0 +1,22 @@
+block variables
+
+nav.navigation
+  ul.navigation__list
+
+    li.navigation__item(class={'navigation__item--active':activeMain})
+      a.navigation__link(href='./main.html')
+        .navigation__img
+          span.sprite.main_icon_white_png
+        .navigation__text Главная
+
+    li.navigation__item(class={'navigation__item--active':activeComment})
+      a.navigation__link(href='./comments.html')
+        .navigation__img
+          span.sprite.feed_icon_white_png
+        .navigation__text Отзывы
+
+    li.navigation__item(class={'navigation__item--active':activePrice})
+      a.navigation__link(href='./price.html')
+        .navigation__img
+          span.sprite.service_icon_white_png 
+        .navigation__text Услуги

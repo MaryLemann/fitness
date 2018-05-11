@@ -1,0 +1,103 @@
+.container {
+  margin: 0 auto;
+  max-width: rem(1060px);
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.sprite {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.sprite {
+  background-image: url('./../images/sprite.png'); 
+  background-position: left center; 
+  background-repeat: no-repeat;
+}
+
+.sprite.main_icon_white_png 
+{background-position: -14px 0; 
+  width: 19px; 
+  height: 14px;
+}
+
+.sprite.feed_icon_white_png {
+  background-position: -77px 0; 
+  width: 20px; 
+  height: 18px;
+}
+
+.sprite.service_icon_white_png {
+  background-position: -56px 0; 
+  width: 19px; 
+  height: 14px;
+}
+
+.sprite.main_icon_orange_png {
+  background-position: -35px 0; 
+  width: 19px; 
+  height: 14px;
+}
+
+.sprite.feed_icon_orange_png {
+  background-position: -120px 0; 
+  width: 20px; 
+  height: 18px;
+}
+
+.sprite.service_icon_orange_png {
+  background-position: -99px 0; 
+  width: 19px; 
+  height: 14px;
+}
+
+.sprite.right_png {
+  background-position: -142px 0; 
+  width: 6px; 
+  height: 10px;
+}
+
+.sprite.left_png {
+  background-position: -150px 0; 
+  width: 6px; 
+  height: 10px;
+}
+
+.sprite.vk_png {
+  background-position: -158px 0; 
+  width: 12px; 
+  height: 7px;
+}
+
+.sprite.fb_png {
+  background-position: -172px 0; 
+  width: 6px; 
+  height: 13px;
+}
+
+.sprite.google_png {
+  background-position: -180px 0; 
+  width: 15px; 
+  height: 9px;
+}
+
+.sprite.twitter_png {
+  background-position: -197px 0; 
+  width: 11px; 
+  height: 9px;
+}
+
+.sprite.mail_png {
+  background-position: 0 0; 
+  width: 12px; 
+  height: 9px;
+}
