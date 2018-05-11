@@ -1,6 +1,6 @@
 # Fitness
 
-Демо: http://gwynbleidd.ru/fitness/build
+Демо: https://matvey-phoen1x.github.io/fitness/build
 
 #### Для работы сборки у вас должны быть установлены:
 1) node

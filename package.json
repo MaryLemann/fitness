@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Вёрстка адаптивного сайта для фитнес-центра (pug, scss, gulp)",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "hoek": "^5.0.3"
+  },
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "del": "^3.0.0",
