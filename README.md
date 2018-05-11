@@ -1,5 +1,7 @@
 # Fitness
 
+Вёрстка адаптивного сайта для фитнес-центра (pug, scss, gulp)
+
 Демо: https://matvey-phoen1x.github.io/fitness/build
 
 #### Для работы сборки у вас должны быть установлены:

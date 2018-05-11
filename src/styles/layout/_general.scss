@@ -1,6 +1,16 @@
 .container {
   margin: 0 auto;
   max-width: rem(1060px);
+  display: flex;
+
+  &__footer {
+    @include tablet() {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 .wrapper {
