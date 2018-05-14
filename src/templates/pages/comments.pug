@@ -8,3 +8,107 @@ block variables
   - var banner = false
 
 block content
+
+  section.section--review   
+    .container.container--review
+
+      ul.bread
+        li.bread__item
+          a.bread__link.bread__link--active(href="#") Главная
+        li.bread__item
+          a.bread__link(href="#") Отзывы
+
+      h2.title.title--review Отзывы
+      ul.news.review
+        li.news__item
+          .news__pic
+            img.news__img(src="./assets/images/content/review1.png")
+          .news__text
+            .news__date 12.10.2016
+            .news__title Алексей Воронов
+            .news__desc Пришел, чтобы похудеть немного к лету, но благодаря тренеру Александру Ковалеву, получилось накачать нормальные банки. Втянулся, теперь занимаюсь регулярно, 2 раза в неделю, доволен и всем советую. Кстати, польза от тренировок намного заметнее, если придерживаться ПП. Рацион мне составили на неделю, но я его повторяю, не надоедает.
+        li.news__item
+          .news__pic
+            img.news__img(src="./assets/images/content/review2.png")
+          .news__text
+            .news__date 01.02.2016
+            .news__title Инна Смольная
+            .news__desc Подарили на день рождения абонемент в бассейн, пришлось воспользоваться. Сама бы я сюда не пришла, не очень нравится плавать с мужиками, которые пялятся постоянно, администрации следует обратить внимание на этот вопрос! Еще бросилось в глаза хамство обслуживающего персонала. Уборщица в раздевалке вела себя, как будто это к ней в гости пришли.
+        li.news__item
+          .news__pic
+            img.news__img.news__img--logo(src="./assets/images/content/review3.png")
+          .news__text
+            .news__date 22.12.2015
+            .news__title Владимир Савельев
+            .news__desc Норм клуб, железа хватает, но техника устаревшая. За эту цену – прокатит. Если хотите большего, то обращайтесь в специализированные тренажерки с новым железом и европейской техникой.
+        li.news__item
+          .news__pic
+            img.news__img(src="./assets/images/content/review4.png")
+          .news__text
+            .news__date 14.08.2015
+            .news__title Ирина Савина
+            .news__desc Занимаюсь 4й месяц на петлях ТРХ и очень нравится результат. Даже знакомые отметили, что я помолодела, появилась талия, ножки постройнели. Нагрузка сначала была непривычная, но втягиваешься быстро, тем более, что отражение в зеркале радует. Цены приятные, а если платить на полгода вперед, то вообще выгодно получается, скидка почти 30%. 
+
+      .pagination
+        .pagination__text Страница 1 из 7
+        .pagination__buttons
+          a.pagination__icon(href="#")
+            span.sprite.left_png
+          ul.pagination__list
+            a.pagination__link(href="#")
+              li.pagination__item.pagination__item--active-review 1
+            a.pagination__link(href="#")
+              li.pagination__item.pagination__item--review 2
+            a.pagination__link(href="#")
+              li.pagination__item.pagination__item--review 3
+            a.pagination__link(href="#")
+              li.pagination__item.pagination__item--review 4
+            a.pagination__link(href="#")
+              li.pagination__item.pagination__item--review 5
+            a.pagination__link(href="#")
+              li.pagination__item.pagination__item--review 6
+            a.pagination__link(href="#")
+              li.pagination__item.pagination__item--review 7
+          a.pagination__icon(href="#")
+            span.sprite.right_png
+  
+  section.section--poster
+    .poster
+      .container
+        .poster__text
+          | Помимо перечисленных услуг, мы предоставляем консультации профессиональных диетологов, тренеров, психологов. Также есть кабинет массажа, зал спа рядом с бассейном и возможность арендовать центр для проведения массовых мероприятий. 
+          strong Ждем ваших заявок!
+
+  section.section--form   
+    .container.container--form
+      .form
+        form(action='')
+          h2.title.title--form Оставить отзыв
+          .form__content
+            .form__row
+              .form__column.form__column--left
+                label.form__field-title
+                  | Ваше имя
+                  input.form__input(type='text', placeholder='Андрей')
+              .form__column.form__column--right
+                label.form__field-title
+                  | Ссылка на профиль VK
+                  input.form__input(type='text', placeholder='vk.com/example')
+            .form__row
+              label.form__field-title
+                | Текст отзыва
+                textarea.form__big-text(placeholder='Мне понравилось')
+            .form__row
+              .form__column.form__column--left
+                .form__control-title Отображать фото в отзыве?
+                label.form__control-trigger
+                  input.form__radio(type='radio', name='radio')
+                  span.form__radio-fake
+                  span.form__trigger-title Да
+                label.form__control-trigger
+                  input.form__radio(type='radio', name='radio')
+                  span.form__radio-fake
+                  span.form__trigger-title Нет
+              .form__column.form__column--right
+                .form__button
+                  button.form__submite(type='submit') Отправить            

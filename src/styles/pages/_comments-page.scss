@@ -1,0 +1,225 @@
+.review {
+  margin-bottom: rem(40px);
+}
+
+.form {
+  margin: 0 auto;
+  background-color: #e4e0e0;
+  border-radius: rem(4px);
+  padding: rem(30px) rem(50px);
+  color: #221f1f;
+  margin-bottom: rem(6px);
+  box-sizing: border-box;
+
+  &__radio {
+    display: none;
+
+    &:checked + .form__radio-fake::before {
+      width: rem(8px);
+      height: rem(8px);
+    }
+
+    &:checked + .form__radio-fake{
+      border: 2px solid #f89513;
+      transition: .3s;
+    }
+
+    &:checked + .form__radio-fake + .form__trigger-title{
+      color: #f89513;
+    }
+    
+
+    &-fake {
+      display: inline-block;
+      vertical-align: middle;
+      height: rem(20px);
+      width: rem(20px);
+      border-radius: 50%;
+      border: 2px solid gray;
+      position: relative;
+      background-color: white;
+      margin-right: rem(5px);
+
+      &::before {
+        content: "";
+        display: block;
+        width: rem(0px);
+        height: rem(0px);
+        border-radius: 50%;
+        background-color: #f89513;  
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s;
+      }
+    }
+  }
+
+  & .title {
+    margin-bottom: rem(18px);
+  }
+
+  &__row {
+    display: inline-block;
+    @include opensans(light);
+    font-size: rem(14px);
+    width: 100%;
+
+    @include phone() {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__submite {
+    background-color: #27273e;
+    border-radius: rem(3px);
+    width: rem(140px);
+    height: rem(45px);
+    color: #ffffff;
+    @include opensans(bold);
+    font-size: rem(12px);
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    letter-spacing: 2.2;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: #f89513;
+    }
+  }
+
+  &__field-title {
+    display: block;
+    text-align: left;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    height: rem(45px);
+    outline: 0;
+    border: none;
+    border-radius: rem(3px);
+    display: block;
+    
+  }
+
+  &__button {
+    display: block;
+    text-align: right;
+
+    @include phone() {
+      display: flex;
+      justify-content: center;  
+      margin-top: rem(15px);
+    }
+  }
+
+  &__input {
+    margin-top: rem(7px);
+    padding-left: rem(13px);
+    width: 100%;
+  }
+
+  &__column {
+
+    &--left {
+      float: left;
+      width: 50%;
+
+      @include phone() {
+        width: 100%;
+        float: none;
+        text-align: center;
+      }
+    }
+
+    &--right {
+      float: right;
+      width: 48%;
+      margin-left: 2%;
+
+      @include phone() {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__control-title {
+    margin-bottom: rem(11px);
+  }
+
+  &__control-trigger {
+    margin-right: rem(22px);
+  }
+
+  &__field-title {
+    margin-bottom: rem(14px);
+
+    & .form__big-text {
+      display: block;
+    }
+  }
+
+  &__big-text {
+    overflow: auto;
+    resize: none;
+    width: 100%;
+    height: rem(90px);
+    border-radius: rem(3px);
+    font-size: rem(14px);
+    border: 2px solid white;
+    margin-top: rem(7px);
+    padding: rem(8px) rem(11px);
+  }
+}
+
+.form__input, .form__big-text {
+  opacity: .65;
+  background-color: #fcfcfc;
+  border: 2px solid #fcfcfc;
+  color: black;
+}
+
+.form__input:focus, .form__big-text:focus {
+  border: 2px solid #f89513;
+  opacity: 1;
+  background-color: #ffffff;
+}
+
+.poster {
+  display: block;
+  background-color: #27273e;
+  background-image: url('./../images/poster.png');
+  background-position: center, center;
+  background-repeat: repeat;
+  padding: rem(50px) rem(35px);
+  min-height: 100px;
+
+  @include tablet() {
+    padding: rem(30px) rem(20px);
+  }
+
+  &__text {
+    width: 80%;
+    margin: 0 auto;
+    @include opensans(light);
+    font-size: rem(18px);
+    color: #ffffff;
+    display: block;
+    line-height: 1.7;
+
+    @include tablet() {
+      width: 95%;
+    }
+
+    & strong {
+      color: #f89513;
+      font-weight: bold;
+    }
+  }
+}

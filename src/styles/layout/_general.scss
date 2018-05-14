@@ -37,6 +37,12 @@
     justify-content: center;
     flex-direction: column;
   }
+  
+  &--review {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .wrapper {
@@ -157,11 +163,23 @@
     padding: rem(20px) rem(30px) rem(30px) rem(30px);
   }
 
+  &--review {
+    padding: rem(50px) rem(30px) rem(30px) rem(30px);
+  }
+
   &--office {
     padding: rem(50px) rem(30px) rem(30px) rem(30px);
 
     @include tablet() {
       padding: rem(50px) rem(10px) rem(30px) rem(10px);
+    }
+  }
+
+  &--form {
+    padding: rem(50px) rem(30px) rem(30px) rem(30px);
+
+    @include tablet() {
+      padding: rem(20px) rem(0px);
     }
   }
 }
@@ -203,5 +221,17 @@
     @include tablet() {
       text-align: center;
     }
+  }
+
+  &--review {
+    margin-bottom: rem(50px);
+
+    @include tablet() {
+      text-align: center;
+    }
+  }
+
+  &--form {
+    text-transform: none;
   }
 }
