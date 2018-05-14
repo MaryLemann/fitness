@@ -1,0 +1,343 @@
+.properties {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  
+  @include tablet() {
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    @include opensans(bold);
+    font-size: rem(11px);
+    font-style: normal;
+    letter-spacing: 2.6px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: rem(25px);
+  }
+
+  &__text {
+    @include opensans(regular);
+    font-size: rem(18px);
+    color: #ffffff;
+    line-height: 1.8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__list {
+    list-style: square;
+    list-style-position: inside;
+
+    &-item {
+      list-style: square;
+      list-style-position: inside;
+    }
+  }
+
+  &__desc {
+    text-align: center;
+  }
+
+  &__icon {
+    width: rem(70px);
+    height: rem(70px);
+    background-color: #f89513;
+    border-radius: 50%;
+    margin-bottom: rem(40px);
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 rem(5px);
+    margin: 0 rem(10px) rem(30px) rem(10px);
+    max-width: rem(230px);
+
+    @include tablet() {
+      max-width: inherit;
+      width: calc(80% / 2);
+    }
+
+    @include phone() {
+      width: 90%;
+    }
+  }
+}
+
+.news-block {
+  padding: rem(10px);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: rem(60px);
+
+  @include phone() {
+    flex-direction: column;
+    margin-bottom: rem(30px);
+  }
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    padding: rem(5px);
+    margin-right: rem(20px);
+
+    @include tablet() {
+      width: auto;
+    }
+
+    @include phone() {
+      margin-right: rem(0px);
+      margin-bottom: rem(20px);
+      border-bottom: rem(1px) #cfcfcf solid;
+      padding-bottom: rem(20px);
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: rem(5px);
+
+    @include tablet() {
+      width: auto;
+    }
+  }
+}
+
+.news {
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: rem(50px);
+
+    &:last-child {
+      margin-bottom: rem(0px);
+    }
+
+    @include tablet() {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    line-height: 1.67;
+  }
+
+  &__date {
+    @include roboto(light);
+    font-size: rem(14px);
+    color: #656464;
+
+    @include tablet() {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    @include roboto(bold);
+    color: #221f1f;
+    font-size: rem(17px);
+
+    @include tablet() {
+      text-align: center;
+    }
+  }
+
+  &__desc {
+    @include roboto(light);
+    font-size: rem(17px);
+    color: #221f1f;
+  }
+
+  &__pic {
+    width: rem(160px);
+    height: rem(160px);
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    margin-right: rem(20px);
+
+    @include tablet() {
+      margin-right: rem(0px);
+      margin-bottom: rem(15px);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.top {
+  padding-right: rem(10px);
+
+  @include tablet() {
+    padding-right: rem(0px);
+  }
+
+  @include phone() {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__pic {
+    position: relative;
+
+    @include phone() {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    width: rem(160px);
+    height: 100%;
+    opacity: .7;
+    transition: .3s;
+
+    @include phone() {
+      width: 75%;
+    }
+
+    &:hover {
+      opacity: 1;
+      transition: .3s;
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(20px);
+    position: relative;
+  }
+}
+
+.top-text {
+  margin-bottom: rem(20px);
+  font-size: rem(12px);
+  @include opensans(bold);
+  line-height: 1.75;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+
+  &__title {
+    color: #221f1f;
+
+    @include tablet() {
+      margin-bottom: rem(15px);
+    }
+
+    @include phone() {
+      text-align: center;
+    }
+  }
+
+  &__date {
+    color: #656464;
+
+    @include tablet() {
+      margin-bottom: rem(10px);
+    }
+
+    @include phone() {
+      text-align: center;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  @include phone() {
+    flex-wrap: wrap;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__item {
+    color: #221f1f;
+    padding: rem(6px) rem(10px);
+    border-radius: 3px;
+    transition: .3s;
+    @include roboto(bold);
+    font-size: rem(14px);
+
+    &:hover {
+      background-color: #27273e;
+      color: #ffffff;
+      transition: .3s;
+    }
+
+    &--active {
+      background-color: #27273e;
+      color: #ffffff;
+    }
+  }
+
+  &__text {
+    @include roboto(light);
+    font-size: rem(14px);
+    color: #656464;
+    margin-right: rem(20px);
+
+    @include phone() {
+      margin-right: rem(0px);
+    }
+  }
+
+  &__icon {
+    width: rem(25px);
+    height: rem(25px);
+    display: inline-block;
+    position: relative;
+  }
+}

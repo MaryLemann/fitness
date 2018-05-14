@@ -8,3 +8,103 @@ block variables
   - var banner = true
 
 block content
+
+  section.section--properties   
+    .container.container--properties
+      h2.title.title--properties Особенности
+      ul.properties
+        li.properties__item
+          .properties__icon
+            img(src="./assets/images/content/flower.png").properties__img
+          .properties__title уникальность
+          .properties__text
+            .properties__desc Мы делаем всё, для вашего комфорта
+            ul.properties__list
+              li.properties__list-item Питание включено
+              li.properties__list-item Багаж (5кг)
+              li.properties__list-item Душ/баня
+        li.properties__item
+          .properties__icon
+            img(src="./assets/images/content/star.png").properties__img
+          .properties__title премиум-класс
+          .properties__text
+            .properties__desc Наш зал оборудован тренажёрами A-класса
+            ul.properties__list
+              li.properties__list-item Качество
+              li.properties__list-item Продуктивность
+              li.properties__list-item Результат
+        li.properties__item
+          .properties__icon
+            img(src="./assets/images/content/paint.png").properties__img
+          .properties__title личный тренер
+          .properties__text
+            .properties__desc Тренер сделает всё для вашего результата
+            ul.properties__list
+              li.properties__list-item Программа
+              li.properties__list-item Питание
+              li.properties__list-item План тренировок
+
+  section.section--news   
+    .container.container--news
+      h2.title.title--news Последние новости
+      .news-block
+        .news-block__left
+          ul.news
+            li.news__item
+              .news__pic
+                img.news__img(src="./assets/images/content/news1.jpg")
+              .news__text
+                .news__date 12.10.2016
+                .news__title Похудение с помощью бодибилдинга!
+                .news__desc Вдыхание одного литра кислорода эквивалентно «сжиганию» 5 калорий, однако в минуту при самом высоком темпе движений атлет способен вдохнуть не более 3-4 литров кислорода. Это крайне важно для каждого начинающего атлета.
+            li.news__item
+              .news__pic
+                img.news__img(src="./assets/images/content/news2.jpg")
+              .news__text
+                .news__date 01.02.2016
+                .news__title Заряжай друзей, получай призы!
+                .news__desc Дополнительно для Вас: пользование сауной и предоставление средств личной гигиены, пользование баром, таблица замеров, дружеская атмосфера и постоянная поддержка. Мы запотимся о вашем комфорте и предлагаем испытать это уже сегодня!
+            li.news__item
+              .news__pic
+                img.news__img(src="./assets/images/content/news3.jpg")
+              .news__text
+                .news__date 22.12.2015
+                .news__title Фрилансер? Выпрями спину!
+                .news__desc Создайте рабочее место под себя. Вот этот инструмент поможет определить, что подходит именно вам и вашему организму. Используйте специальную подставку для ноутбука, если вы проводите за ним больше 2 часов. Настройте высоту и яркость монитора! 
+        .news-block__right
+          .top-text
+            .top-text__title топ новостей
+            .top-text__date за сентябрь
+          ul.top
+            li.top__item
+              .top__pic
+                img.top__img(src="./assets/images/content/top1.jpg")
+            li.top__item
+              .top__pic
+                img.top__img(src="./assets/images/content/top2.jpg")
+            li.top__item
+              .top__pic
+                img.top__img(src="./assets/images/content/top3.jpg")
+
+      .pagination
+        .pagination__text Страница 1 из 7
+        .pagination__buttons
+          a.pagination__icon(href="#")
+            span.sprite.left_png
+          ul.pagination__list
+            a.pagination__link(href="#")
+              li.pagination__item.pagination__item--active 1
+            a.pagination__link(href="#")
+              li.pagination__item 2
+            a.pagination__link(href="#")
+              li.pagination__item 3
+            a.pagination__link(href="#")
+              li.pagination__item 4
+            a.pagination__link(href="#")
+              li.pagination__item 5
+            a.pagination__link(href="#")
+              li.pagination__item 6
+            a.pagination__link(href="#")
+              li.pagination__item 7
+          a.pagination__icon(href="#")
+            span.sprite.right_png
