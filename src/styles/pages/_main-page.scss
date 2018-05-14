@@ -19,7 +19,7 @@
   }
 
   &__text {
-    @include opensans(regular);
+    @include opensans(light);
     font-size: rem(18px);
     color: #ffffff;
     line-height: 1.8;
@@ -282,6 +282,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin-bottom: rem(30px);
 
   &__buttons {
     display: flex;

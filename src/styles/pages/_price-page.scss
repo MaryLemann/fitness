@@ -1,0 +1,186 @@
+.partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__item {
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(50px);
+
+    @include tablet() {
+      width: calc(90% / 2);
+    }
+
+    @include phone() {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    max-width: rem(180px);
+    max-height: (70px);
+  }
+
+  &__link {
+    filter: grayscale(100%);
+    transition: .3s;
+
+    &:hover {
+      filter: grayscale(0%);
+      transition: .3s;
+    }
+  }
+}
+
+.bread {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: rem(30px);
+
+  &__item {
+
+    &:after {
+      content: '/';
+      margin-right: rem(5px);
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  &__link {
+    @include opensans(light-italic);
+    font-size: rem(14px);
+    margin-right: rem(5px);
+    color: rgba(34, 31, 31, 0.8);
+    text-decoration: none;
+
+    &--active {
+      color: rgba(248, 149, 19, 0.8);
+      text-decoration: underline;
+    }
+  }
+}
+
+.office {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  &__item {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: rem(5px);
+    vertical-align: top;
+    margin-bottom: rem(30px);
+ 
+    @include tablet() {
+      width: calc(100% / 2);
+    }
+
+    @include phone() {
+      width: 100%;
+    }
+  }
+
+  &__pic {
+    max-width: rem(300px);
+    height: rem(180px);
+    border-radius: rem(5px);
+    position: relative;
+    margin-bottom: rem(30px);
+
+    @include tablet() {
+      max-width: rem(330px);
+    }
+
+    @include phone() {
+      max-width: 100%;
+    }
+
+    &--1 {
+      background: url("./../images/content/price1.jpg") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--2 {
+      background: url("./../images/content/price2.jpg") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--3 {
+      background: url("./../images/content/price3.jpg") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--4 {
+      background: url("./../images/content/price4.jpg") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--5 {
+      background: url("./../images/content/price5.jpg") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--6 {
+      background: url("./../images/content/price6.jpg") center center no-repeat;
+      background-size: cover;
+    }
+
+    &::before {
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(black, .5);
+      border-radius: rem(5px);
+    }
+
+    &-text {
+      @include opensans(bold);
+      font-size: rem(24px);
+      color: white;
+      text-transform: uppercase;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
+  }
+
+  &__title {
+    font-size: rem(18px);
+    @include opensans(bold);
+    line-height: 1.17;
+    color: #221f1f;
+    margin-bottom: rem(10px);
+
+    @include phone() {
+      text-align: center;
+    }
+  }
+
+  &__desc {
+    @include opensans(light);
+    font-size: rem(14px);
+    line-height: 1.5;
+    color: #221f1f;
+  }
+}
